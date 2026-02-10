@@ -1,0 +1,61 @@
+:root {
+            --primary-color: #0d6efd;
+            --dark-bg: #1a1d20;
+            --card-bg: #212529;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-bg);
+            color: #f8f9fa;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+        .text-code {
+            font-family: 'Fira Code', monospace;
+            color: #66d9ef;
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: rgba(26, 29, 32, 0.95) !important;
+            backdrop-filter: blur(10px);
+        }
+        .nav-link {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #adb5bd !important;
+            transition: color 0.3s;
+        }
+        .nav-link.active, .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        /* Cards */
+        .custom-card {
+            background-color: var(--card-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .custom-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        /* Form Validation Styles */
+        .is-invalid {
+            border-color: #dc3545 !important;
+            background-image: none !important;
+        }
+        .invalid-feedback {
+            display: none;
+            color: #dc3545;
+            font-size: 0.875em;
+        }
+        .is-invalid + .invalid-feedback {
+            display: block;
+        }
